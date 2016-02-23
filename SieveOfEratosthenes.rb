@@ -1,5 +1,7 @@
 # SieveOfEratosthenes.rb
 require 'sinatra'
+require "slim"
+
 get '/' do
-  'Placeholder text!'
+  slim :index
 end
