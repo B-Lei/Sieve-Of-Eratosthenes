@@ -37,6 +37,9 @@ td {
   height: 40px;
   border: 1px solid white;
 }
+td.darkgrey {
+  background-color: grey;
+}
 td.grey {
   background-color: #C0C0C0;
 }

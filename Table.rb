@@ -1,7 +1,8 @@
 class Table
-  attr_accessor :space, :numcols, :numrows
+  attr_accessor :space, :numcols, :numrows, :input
   def initialize(cols, rows, inputNumber)
-    iterator = 1
+    iterator = 0
+    @input = inputNumber
     @numcols = cols
     @numrows = rows
     @space = []
@@ -14,6 +15,9 @@ class Table
           break
         end
         square = Square.new("grey")
+        if iterator == 0 || iterator == 1
+          square.color = "darkgrey"
+        end
         square.y = y
         square.x = x
         square.value = iterator
@@ -30,14 +34,19 @@ class Table
   end
   # The actual Sieve algorithm (WIP)
   def sieve()
-    @space[0][0].color = "red"
+    @space[0][0].color = @space[0][1].color = "red"
+    for i in 2..Math.sqrt(@input)
+      
+    end
+=begin
     counter = 0
     @space.each do |p|
       next unless p
       break if p*p > inputNumber
       counter += 1
-      (p*p).step(inputNumber,p) { |m| @space[m/@numcols][m % @numrows] = nil}
+      (p*p).step(inputNumber,p) { |m| @space[0][0] = nil}
     end
+=end
   end
 end
 

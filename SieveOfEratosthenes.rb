@@ -17,14 +17,17 @@ end
 # Displays table upon entering input
 post '/1' do
   @input = params[:input]
-  #slim :input
   if !valid_input(@input) || @input.to_s.empty?
     slim :tryagain
   else
     @inputNumber = Integer(@input)
     @size = Math.sqrt(@inputNumber).ceil
-    @table = Table.new(@size,@size,@inputNumber)
-    #@table.sieve()
+    @col = @row = @size
+    if @size == Math.sqrt(@inputNumber)
+      @col += 1
+    end
+    @table = Table.new(@col,@row,@inputNumber)
+    @table.sieve()
     slim :tableview
   end
 end
