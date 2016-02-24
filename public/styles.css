@@ -8,6 +8,11 @@ h1 {
   font-size: 50px;
   font-family: "Helvetica", sans-serif;
 }
+h2 {
+  font-size: 15px;
+  font-family: "Helvetica", sans-serif;
+  color: red;
+}
 h3 {
   font-size: 25px;
   font-family: "Helvetica", sans-serif;
