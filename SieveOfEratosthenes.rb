@@ -1,4 +1,5 @@
 # SieveOfEratosthenes.rb
+# By Ben Lei
 require 'sinatra'
 require "slim"
 require "inspectbang"
@@ -9,17 +10,19 @@ get '/' do
   slim :index
 end
 
-# Handles adding junk to url
+# Handles URLs with junk values, defaulting to index
 get '/:input' do
   slim :index
 end
 
 # Displays table upon entering input
 post '/1' do
+  # Checks for valid input - if invalid, prompt for another input
   @input = params[:input]
   if !valid_input(@input) || @input.to_s.empty?
     slim :tryagain
   else
+    # Simple math to determine the size of rows/columns based on input value
     @inputNumber = Integer(@input)
     @size = Math.sqrt(@inputNumber).ceil
     @col = @row = @size
@@ -32,8 +35,9 @@ post '/1' do
   end
 end
 
+# Used for returning to index to input another value
 post "/" do
-  slim:index
+  slim :index
 end
 
 # A regex function for checking valid input

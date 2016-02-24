@@ -1,6 +1,12 @@
+/ Displays the table after entering a valid input
 title Produced Table
 body
-  h3 Primes are in green:
+  h3 Primes are &#40<span style="color: #66ff66"> green </span>&#41
+  / Prints a basic list of primes
+  h5
+    - for item in @table.primeList do
+      td = item
+      td = " "  
   - if @table
     table#my_table
       - for row in @table.space
@@ -9,6 +15,7 @@ body
           td class=square.color id=('row' + square.x.to_s + 'col' + square.y.to_s)
             div class="cellContent"
               == square.value
+  / Allows user to return to index so they cab enter more values
   h4
     form action="/" method="POST"
-      input.button type="submit" value="Input Another >>"
+      input.button type="submit" value="Try Another"

@@ -1,24 +1,48 @@
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}
+input[type=submit] {
+  padding:6px 15px;
+  background:#3498DB;
+  color: #FFF;
+  border:0 none;
+  border-radius : 0px 3px 3px 0px ;
+  moz-border-radius : 0px 3px 3px 0px ;
+  font-family: "Open sans", sans-serif;
+}
+input[type=text] {
+  padding: 4px;
+}
 body {
-  width: 800px;
+  width: 900px;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 50px;
 }
 h1 {
   font-size: 50px;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Open sans", sans-serif;
 }
 h2 {
   font-size: 15px;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Open sans", sans-serif;
   color: red;
 }
 h3 {
-  font-size: 25px;
-  font-family: "Helvetica", sans-serif;
+  font-size: 20px;
+  font-family: "Open sans", sans-serif;
 }
 h4 {
-  padding: 10px;
+  padding: 5px;
+}
+h5 {
+  font-size: 15px;
+  font-family: "Open sans", sans-serif;
+  padding-bottom: 10px;
 }
 table {
   empty-cells: show;
@@ -27,6 +51,7 @@ table {
   border: 3px solid white;
   text-align: center;
   margin: 0 auto;
+  font-family: "Open sans", sans-serif;
 }
 tr {
   padding: 0px;
