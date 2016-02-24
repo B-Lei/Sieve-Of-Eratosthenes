@@ -7,7 +7,6 @@
   src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
 }
 input[type=submit] {
-  -webkit-appearance: none;
   padding: 14px;
   background:#3498DB;
   color: #FFF;
@@ -16,12 +15,12 @@ input[type=submit] {
   font-family: "Open sans", sans-serif;
 }
 input[type=text] {
-  -webkit-appearance: none;
   padding: 9px;
   border: solid 5px #c9c9c9;
   transition: border 0.3s;
 }
 body {
+  -webkit-appearance: none;
   width: 900px;
   margin: 0 auto;
   text-align: center;
