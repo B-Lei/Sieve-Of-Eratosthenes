@@ -1,17 +1,16 @@
 body {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  margin-right: 50%;
-  transform: translate(-50%, -50%);
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
 }
 h1 {
-  font-size: 30px;
-  font-family: "Helvetica", sans-serif;;
+  font-size: 50px;
+  font-family: "Helvetica", sans-serif;
 }
 h3 {
-  font-size: 12px;
-  font-family: "Helvetica", sans-serif;;
+  font-size: 25px;
+  font-family: "Helvetica", sans-serif;
 }
 table {
   empty-cells: show;
@@ -19,6 +18,7 @@ table {
   padding: 0px;
   border: 3px solid white;
   text-align: center;
+  margin: 0 auto;
 }
 tr {
   padding: 0px;
