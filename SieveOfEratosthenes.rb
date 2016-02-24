@@ -13,15 +13,8 @@ end
 post '/' do
   @input = params[:input]
   slim :input
-  @size = Math.sqrt(Integer(@input))
-  if @size == @size.floor
-    @numcolumns = @numrows = @size.floor
-  elsif @size-@size.floor <= 0.5
-    @numcolumns = @numrows = @size.floor
-    @numcolumns += 1
-  else #@size-@size.floor > 0.5
-    @numcolumns = @numrows = @size.ceil
-  end
-  @table = Table.new(@numcolumns,@numrows)
+  @inputNumber = Integer(@input)
+  @size = Math.sqrt(@inputNumber).ceil
+  @table = Table.new(@size,@size,@inputNumber)
   slim :tableview
 end

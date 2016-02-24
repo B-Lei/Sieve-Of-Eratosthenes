@@ -1,6 +1,6 @@
 class Table
   attr_accessor :space
-  def initialize(cols, rows)
+  def initialize(cols, rows, inputNumber)
     @iterator = 1
     @space = []
     y = 0
@@ -8,6 +8,9 @@ class Table
     rows.times do
       row = []
       cols.times do
+        if @iterator > inputNumber
+          break
+        end
         square = Square.new({:color => 'grey'})
         square.y = y
         square.x = x
