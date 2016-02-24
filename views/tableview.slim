@@ -1,4 +1,4 @@
-title My Table
+title Produced Table:
 body
   h1 My Table
   - if @table
@@ -7,3 +7,5 @@ body
         tr
         - for square in row
           td class=square.color id=('row' + square.x.to_s + 'col' + square.y.to_s)
+          div class="cellContent"
+            == square.value

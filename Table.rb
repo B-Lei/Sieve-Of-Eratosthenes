@@ -1,6 +1,7 @@
 class Table
   attr_accessor :space
   def initialize(cols, rows)
+    @iterator = 1
     @space = []
     y = 0
     x = 0
@@ -10,8 +11,10 @@ class Table
         square = Square.new({:color => 'grey'})
         square.y = y
         square.x = x
+        square.value = @iterator
         row.push square
         x += 1
+        @iterator += 1
       end
       y += 1
       x = 0
@@ -21,7 +24,7 @@ class Table
 end
 
 class Square
-  attr_reader :color, :x, :y
+  attr_reader :color, :x, :y, :value
   def initialize(args)
     @color = args['color'] || 'grey'
   end
@@ -32,5 +35,9 @@ class Square
 
   def y=(y)
     @y = y
+  end
+
+  def value=(value)
+    @value = value
   end
 end
