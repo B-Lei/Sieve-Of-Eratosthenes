@@ -7,6 +7,7 @@
   src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
 }
 input[type=submit] {
+  -webkit-appearance: none;
   padding:6px 15px;
   background:#3498DB;
   color: #FFF;
