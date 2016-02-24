@@ -9,6 +9,11 @@ get '/' do
   slim :index
 end
 
+# Handles adding junk to url
+get '/:input' do
+  slim :index
+end
+
 # Displays table upon entering input
 post '/1' do
   @input = params[:input]

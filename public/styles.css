@@ -17,6 +17,9 @@ h3 {
   font-size: 25px;
   font-family: "Helvetica", sans-serif;
 }
+h4 {
+  padding: 10px;
+}
 table {
   empty-cells: show;
   border-collapse: collapse;
@@ -42,7 +45,4 @@ td.green {
 }
 td.red {
   background-color:  #ff4d4d;
-}
-h4 {
-  padding: 50px;
 }
