@@ -37,3 +37,12 @@ td {
 td.grey {
   background-color: #C0C0C0;
 }
+td.green {
+  background-color: #66ff66;
+}
+td.red {
+  background-color:  #ff4d4d;
+}
+h4 {
+  padding: 50px;
+}

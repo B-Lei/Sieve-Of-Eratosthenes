@@ -9,4 +9,6 @@ body
           td class=square.color id=('row' + square.x.to_s + 'col' + square.y.to_s)
             div class="cellContent"
               == square.value
-            
+  h4
+    form action="/" method="POST"
+      input.button type="submit" value="Input Another >>"
