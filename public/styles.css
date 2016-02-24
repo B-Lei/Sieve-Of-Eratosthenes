@@ -7,6 +7,7 @@
   src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
 }
 input[type=submit] {
+  -webkit-appearance: none;
   padding: 14px;
   background:#3498DB;
   color: #FFF;
@@ -15,6 +16,7 @@ input[type=submit] {
   font-family: "Open sans", sans-serif;
 }
 input[type=text] {
+  -webkit-appearance: none;
   padding: 9px;
   border: solid 5px #c9c9c9;
   transition: border 0.3s;
@@ -26,27 +28,33 @@ body {
   text-align: center;
 }
 h1 {
+  -webkit-appearance: none;
   font-size: 50px;
   font-family: "Open sans", sans-serif;
 }
 h2 {
+  -webkit-appearance: none;
   font-size: 15px;
   font-family: "Open sans", sans-serif;
   color: red;
 }
 h3 {
+  -webkit-appearance: none;
   font-size: 20px;
   font-family: "Open sans", sans-serif;
 }
 h4 {
+  -webkit-appearance: none;
   padding: 5px;
 }
 h5 {
+  -webkit-appearance: none;
   font-size: 15px;
   font-family: "Open sans", sans-serif;
   padding-bottom: 10px;
 }
 table {
+  -webkit-appearance: none;
   empty-cells: show;
   border-collapse: collapse;
   padding: 0px;
@@ -56,9 +64,11 @@ table {
   font-family: "Open sans", sans-serif;
 }
 tr {
+  -webkit-appearance: none;
   padding: 0px;
 }
 td {
+  -webkit-appearance: none;
   padding: 0px;
   width: 40px;
   height: 40px;
