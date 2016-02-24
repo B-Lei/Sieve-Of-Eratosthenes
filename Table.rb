@@ -1,6 +1,6 @@
-class SieveTable
+class Table
   attr_accessor :space
-  def initialize(cols=12, rows=12)
+  def initialize(cols, rows)
     @space = []
     y = 0
     x = 0

@@ -1,0 +1,9 @@
+title My Table
+body
+  h1 My Table
+  - if @table
+    table#my_table
+      - for row in @table.space
+        tr
+        - for square in row
+          td class=square.color id=('row' + square.x.to_s + 'col' + square.y.to_s)
