@@ -1,8 +1,24 @@
+body {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  font-size: 30px;
+  font-family: "Helvetica", sans-serif;;
+}
+h3 {
+  font-size: 12px;
+  font-family: "Helvetica", sans-serif;;
+}
 table {
   empty-cells: show;
   border-collapse: collapse;
   padding: 0px;
   border: 3px solid white;
+  text-align: center;
 }
 tr {
   padding: 0px;
@@ -14,5 +30,5 @@ td {
   border: 1px solid white;
 }
 td.grey {
-  background-color: grey;
+  background-color: #C0C0C0;
 }

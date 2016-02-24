@@ -1,11 +1,11 @@
-title Produced Table:
+title Produced Table
 body
-  h1 My Table
+  h3 Primes are in green:
   - if @table
     table#my_table
       - for row in @table.space
         tr
         - for square in row
           td class=square.color id=('row' + square.x.to_s + 'col' + square.y.to_s)
-          div class="cellContent"
-            == square.value
+            div class="cellContent"
+              == square.value
